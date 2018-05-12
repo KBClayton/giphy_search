@@ -1,0 +1,50 @@
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Giphy Search</title>
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="assets/javascript/java.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 text-center">
+                <div id="empty">
+                <div id="buttondiv">
+
+                </div>
+                </div>
+
+            </div>
+            <div class="=col-lg-4 text-center">
+                    <form id="pic-form">
+                            <label for="pic-input">Add a new image button:</label><br>
+                            <input type="text" id="pic-input" placeholder="new button">
+                            <input id="find-pic" type="submit" value="Make button" class="btn-primary" >
+                    </form><br>
+                    <button id="local_save" class="btn-primary">Save buttons localy</button>
+                    <button id="local_load" class="btn-primary">Load buttons from local</button><br>
+                    <button id="local_clear" class="btn-primary">Clear local data</button><br><br>
+
+                    <button id="cloud_save" class="btn-primary">Save buttons to cloud</button>
+                    <button id="cloud_load" class="btn-primary">Load buttons from cloud</button><br>
+                    <button id="cloud_clear" class="btn-primary">Clear cloud data</button>
+
+            </div>
+            <div class="col-lg-12 text-center">
+                <div id="picdiv">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
