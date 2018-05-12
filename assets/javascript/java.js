@@ -216,6 +216,7 @@ $(document).ready(function() {
 
     $("#cloud_save").on("click", function(event) {
         event.preventDefault();
+        oldlength=button_array.length;
         giphypic.save_cloud();
     });
 
